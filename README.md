@@ -30,7 +30,7 @@ Users should be able to:
 ### Links
 
 <!-- - Solution URL: [Frontend Mentor](https://your-solution-url.com) -->
-- Live Site URL: [GitHub Pages](https://zmoerema.github.io/interactive-rating-component/)
+- Live Site URL: [GitHub Pages](https://zmoerema.github.io/frontend-mentor-interactive-rating-component/)
 
 ## My process
 
