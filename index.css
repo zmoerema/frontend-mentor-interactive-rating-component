@@ -41,9 +41,10 @@ p, ul {
 .container {
     background-color: var(--Dark-Blue);
     border-radius: 15px;
-    padding: 30px;
+    padding: 30px 20px;
     margin: 20px;
-    width: 300px;
+    width: calc(100% - 40px);
+    max-width: 425px;
 
     display: flex;
     flex-direction: column;
@@ -72,7 +73,7 @@ p, ul {
 
 #rating-state .rate {
     text-align: center;
-    padding-top: 9px;
+    padding-top: 10px;
 }
 
 #rating-state .rate:hover {
