@@ -1,0 +1,88 @@
+:root {
+    --Orange: hsl(25, 97%, 53%);
+    --White: hsl(0, 0%, 100%);
+    --Light-Grey: hsl(217, 12%, 63%);
+    --Medium-Grey: hsl(216, 12%, 54%);
+    --Medium-Grey-Semi: hsla(216, 12%, 54%, 0.1);
+    --Dark-Blue: hsl(213, 19%, 18%);
+    --Very-Dark-Blue: hsl(216, 12%, 8%);
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: var(--Very-Dark-Blue);
+    font-family: "Overpass";
+    font-size: 15px;
+    height: 100vh;
+
+    display: grid;
+    place-content: center;
+}
+
+h1 {
+    color: var(--White);
+    font-size: 1.5em;
+}
+
+p, ul {
+    color: var(--Light-Grey);
+    opacity: 0.8;
+}
+
+.hidden {
+    display: none;
+}
+
+.container {
+    background-color: var(--Dark-Blue);
+    border-radius: 15px;
+    padding: 20px;
+    margin: 20px;
+    width: 300px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.circle {
+    background-color: var(--Medium-Grey-Semi);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px; 
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#rates {
+    list-style-type: none;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.rate {
+    text-align: center;
+    padding-top: 9px;
+
+}
+
+
+#submit {
+    background-color: var(--Orange);
+    color: var(--White);
+    border-radius: 30px;
+    font-weight: 600;
+    padding: 15px 0;
+    border: none;
+    width: 100%;
+}
