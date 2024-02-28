@@ -29,7 +29,7 @@ h1 {
     font-size: 1.5em;
 }
 
-p, ul {
+p {
     color: var(--Light-Grey);
     opacity: 0.8;
 }
@@ -45,7 +45,10 @@ p, ul {
     margin: 20px;
     width: calc(100% - 40px);
     max-width: 425px;
+}
 
+.container,
+#rating-state form {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -54,6 +57,7 @@ p, ul {
 #rating-state .circle {
     background-color: var(--Medium-Grey-Semi);
     border-radius: 50%;
+    border: none;
     width: 40px;
     height: 40px; 
 }
@@ -72,15 +76,14 @@ p, ul {
 }
 
 #rating-state .rate {
-    text-align: center;
-    padding-top: 10px;
+    color: var(--Light-Grey);
 }
 
 #rating-state .rate:hover {
     background-color: var(--Medium-Grey);
 }
 
-#rating-state  #submit {
+#rating-state #submit {
     background-color: var(--Orange);
     color: var(--White);
     border-radius: 30px;
