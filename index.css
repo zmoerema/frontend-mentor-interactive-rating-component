@@ -41,7 +41,7 @@ p, ul {
 .container {
     background-color: var(--Dark-Blue);
     border-radius: 15px;
-    padding: 20px;
+    padding: 30px;
     margin: 20px;
     width: 300px;
 
@@ -50,34 +50,33 @@ p, ul {
     gap: 20px;
 }
 
-.circle {
+#rating-state .circle {
     background-color: var(--Medium-Grey-Semi);
     border-radius: 50%;
     width: 40px;
     height: 40px; 
 }
 
-.logo {
+#rating-state .logo {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#rates {
+#rating-state #rates {
     list-style-type: none;
 
     display: flex;
     justify-content: space-between;
 }
 
-.rate {
+#rating-state .rate {
     text-align: center;
     padding-top: 9px;
 
 }
 
-
-#submit {
+#rating-state  #submit {
     background-color: var(--Orange);
     color: var(--White);
     border-radius: 30px;
@@ -85,4 +84,23 @@ p, ul {
     padding: 15px 0;
     border: none;
     width: 100%;
+}
+
+#thank-you-state {
+    text-align: center;
+}
+
+#thank-you-state #thank-you-icon {
+    margin: 0 auto;
+    width: 100px;
+    height: auto;
+}
+
+#thank-you-state #rating {
+    background-color: var(--Medium-Grey-Semi);
+    color: var(--Orange);
+    border-radius: 50px;
+    padding: 5px 10px;
+    width: fit-content;
+    margin: 0 auto;
 }
