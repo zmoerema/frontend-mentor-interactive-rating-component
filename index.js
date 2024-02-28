@@ -1,15 +1,30 @@
-let ratingState = document.getElementById("rating-state");
-let thankYouState = document.getElementById("thank-you-state");
+const ratingState = document.getElementById("rating-state");
+const thankYouState = document.getElementById("thank-you-state");
 
-let ratingContainer = document.getElementById("rating-state.container");
-let thankYouContainer = document.getElementById("thank-you-state.container");
+const submitButton = document.getElementById("submit");
+const allRates = document.getElementsByClassName("rate");
+let chosenRate;
 
-let submitButton = document.getElementById("submit");
+function setRate(value) {
+    chosenRate = value;
+}
+
+function showRate() {
+    let htmlRate = document.getElementById('chosen-rate');
+    htmlRate.innerHTML = chosenRate;
+}
 
 function showThankYou() {
     ratingState.classList.add('hidden');
-    thankYouState.classList.remove('hidden')
+    thankYouState.classList.remove('hidden');
+
+    showRate();
 }
+
+Array.from(allRates).forEach(rate => {
+    const value = rate.textContent;
+    rate.addEventListener('click', () => setRate(value));
+});
 
 submitButton.addEventListener('click', (event) => {
     event.preventDefault();
