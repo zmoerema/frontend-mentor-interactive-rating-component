@@ -77,10 +77,7 @@ p {
 
 #rating-state .rate {
     color: var(--Light-Grey);
-}
-
-#rating-state .rate:hover {
-    background-color: var(--Medium-Grey);
+    cursor: pointer;
 }
 
 #rating-state #submit {
@@ -89,11 +86,12 @@ p {
     border-radius: 30px;
     font-weight: 600;
     padding: 15px 0;
+    cursor: pointer;
     border: none;
     width: 100%;
 }
 
-#rating-state  #submit:hover {
+#rating-state #submit:hover {
     background-color: var(--White);
     color: var(--Orange);
 }
