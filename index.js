@@ -11,4 +11,7 @@ function showThankYou() {
     thankYouState.classList.remove('hidden')
 }
 
-submitButton.addEventListener('click', () => showThankYou())
+submitButton.addEventListener('click', (event) => {
+    event.preventDefault();
+    showThankYou();
+});
