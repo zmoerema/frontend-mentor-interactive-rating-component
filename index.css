@@ -73,7 +73,10 @@ p, ul {
 #rating-state .rate {
     text-align: center;
     padding-top: 9px;
+}
 
+#rating-state .rate:hover {
+    background-color: var(--Medium-Grey);
 }
 
 #rating-state  #submit {
@@ -84,6 +87,11 @@ p, ul {
     padding: 15px 0;
     border: none;
     width: 100%;
+}
+
+#rating-state  #submit:hover {
+    background-color: var(--White);
+    color: var(--Orange);
 }
 
 #thank-you-state {
